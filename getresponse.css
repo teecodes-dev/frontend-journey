@@ -261,6 +261,20 @@ h2{
     display: none;
 }
 
+.dtl{
+    display: flex;
+    justify-content: space-between;
+}
+
+.dtl div{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    justify-content: center;
+    align-items: center;
+}
+
+
 hr{
     border: 1.5px solid black;
     margin: 50px 0;
