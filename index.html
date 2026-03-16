@@ -1,15 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 </head>
+
 <body>
-    <a href="getresponse.html" target="_blank">1. Link to Getresponse Assignment 1</a> <br>
-    <a href="travelife.html" target="_blank">2. Link to TraveLife-Tourism-site Assigment 2 </a> <br>
-    <a href="appclick.html" target="_blank">3. Link to AppClick-site (cloned) Assigment 3 </a> <br>
-    <a href="array.html" target="_blank">4. Link to Array Method Assignment 4 </a>
-    
+    <header id="main_header">
+        <div id="header_menubar">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <nav id="main_nav">
+            <a href="index.html">Home</a>
+            <a href="#card_container">View Assignments</a>
+            <a href="#Feedback">Feedback</a>
+            <a href="#Contact">Contact Me</a>
+        </nav>
+
+        <div id="branding">
+            <img src="/assets/my profilepicture.jpg" alt="brand_logo">
+        </div>
+
+    </header>
+
+    <main>
+        <!-- ...Hero Section... -->
+        <div id="hero">
+            <div id="hero_profile">
+                <img src="/assets/my profilepicture.jpg" alt="profilepicture">
+            </div>
+            <div id="hero_text">
+                <h1>Welcome to My Frontend Journey</h1>
+                <h3>Hi, I'm Ayotomide Adeyanju</h3>
+                <p>This page showcases some of the projects and assignments I have built
+                    while learning Frontend Development. Each project demonstrates my
+                    growing skills in HTML, CSS and JavaScript.
+                </p>
+                <p>
+                    Feel free to explore the assignments below to see my progress as I continue to improve my web
+                    development skills.
+                </p>
+            </div>
+        </div>
+
+        <!-- ...Assignment Cards... -->
+        <section id="card_container">
+            <div class="card_item">
+                <img src="/assets/get-response-img.png" alt="">
+                <div id="card_inneritem">
+                    <h2>GetResponse</h2>
+                    <p>Email marketing platform landing page built with HTML and CSS.</p>
+                </div>
+                <button id="btn_cta" onclick="location.href=`getresponse.html`">View Assignment <i
+                        class="fa-solid fa-arrow-right"></i></button>
+            </div>
+
+            <div class="card_item">
+                <img src="/assets/tourism img.png" alt="">
+                <div id="card_inneritem">
+                    <h2>Tourism-site</h2>
+                    <p>Tourism website design showcasing destinations and travel experiences.</p>
+                </div>
+                <button id="btn_cta" onclick="location.href=`travelife.html`">View Assignment <i
+                        class="fa-solid fa-arrow-right"></i></button>
+            </div>
+
+            <div class="card_item">
+                <img src="/assets/appclick-img.png" alt="">
+                <div id="card_inneritem">
+                    <h2>AppClick Login page</h2>
+                    <p> Rebuilding Appclick User Auth Screen (to practice layout and UI design.) </p>
+                </div>
+                <button id="btn_cta" onclick="location.href=`appclick.html`">View Assignment <i
+                        class="fa-solid fa-arrow-right"></i></button>
+            </div>
+
+            <div class="card_item">
+                <img src="/assets/Array-img.png" alt="">
+                <div id="card_inneritem">
+                    <h2>JavaScript Array Methods</h2>
+                    <p>Demonstrating JavaScript array methods and logic.</p>
+                </div>
+                <button id="btn_cta" onclick="location.href=`array.html`">View Assignment <i
+                        class="fa-solid fa-arrow-right"></i></button>
+            </div>
+
+            <div class="card_item">
+                <img src="/assets/index img_coming soon.avif" alt="">
+                <div id="card_inneritem">
+                    <h2>Coming Soon...</h2>
+                    <p>Under Construction, keep watching this space, see you soon ...</p>
+                </div>
+                <button id="btn_cta" onclick="location.href=`array.html`">View Assignment <i
+                        class="fa-solid fa-arrow-right"></i></button>
+            </div>
+
+            <div class="card_item">
+                <img src="/assets/index img_coming soon.avif" alt="">
+                <div id="card_inneritem">
+                    <h2>Coming Soon...</h2>
+                    <p>Under Construction, keep watching this space, see you soon ...</p>
+                </div>
+                <button id="btn_cta" onclick="location.href=`array.html`">View Assignment <i
+                        class="fa-solid fa-arrow-right"></i></button>
+            </div>
+        </section>
+
+       
+
+        <!-- ...Feedback Section...  -->
+         <section id="Feedback">
+            <h2>Assignment Feedback</h2>
+            <div id="Feedback_form">
+                <label for="Name">Name:</label>
+                <input type="text" placeholder="Enter your name" required> 
+                <label for="Email">Email:</label>
+                <input type="email" placeholder="Enter your email" required> 
+                <label for="Reviewing">Which assignment are reviewing?</label> 
+                <input type="text" placeholder="Enter your answer" required> 
+                <label for="Rating">Rating:</label> 
+                <input type="checkbox">
+                <label for="Excellent">Excellent</label> 
+                <input type="checkbox">
+                <label for="Good">Good</label> 
+                <input type="checkbox">
+                <label for="Average">Average</label> 
+                <input type="checkbox">
+                <label for="Poor">Poor</label> 
+                <textarea name="Feedback" id="Feedback_box" placeholder="Enter Your Feedback" rows="5" cols="60"></textarea> <br> <br>
+            </div>
+                <button id="Feedback_cta" onclick="location.href=`index.html`">Submit</button>
+         </section>
+
+         <!-- ...Contact Section... -->
+         <section id="Contact">
+            <div id="Contact_title">
+                <h2>Contact Me</h2>
+                <p>Feel free to get in touch with me through the form below</p>
+            </div>
+
+            <div id="Contact_form">
+            <div id="Contact_links">
+                <p> <i class="fa-regular fa-envelope"></i> ayotomideadeyanju@gmail.com</p>
+                <a href="https://ng.linkedin.com/in/adeyanju-ayotomide-59004b129" target="_blank"><i class="fa-brands fa-square-linkedin"></i> https://ng.linkedin.com/in/adeyanju-ayotomide-59004b129</a>
+                <a href="https://github.com/teecodes-dev" target="_blank"><i class="fa-brands fa-square-github"></i> https://github.com/teecodes-dev</a>
+                <a href="https://x.com/Haryor449022" target="_blank"><i class="fa-brands fa-x-twitter"></i> https://x.com/Haryor449022</a>
+                <p><i class="fa-brands fa-whatsapp"></i> +2348061520324</p>
+            </div>
+
+            <div id="Contact_text">
+                <input type="text" placeholder="Your Name" required> 
+                <input type="email" placeholder="Your Email" required> 
+                <textarea name="Message" id="Contact_messagebox" placeholder="Your Message" rows="5" cols="60" required></textarea>
+                <button id="Contact_btn" onclick="location.href=`index.html`">Send Message</button>
+            </div>
+            </div>
+            <p id="copyright"><i class="fa-regular fa-copyright"></i> 2026 Ayotomide Adeyanju. All rights reserved. </p>
+         </section>
+
+    </main>
+
+    <script src="index.js"></script>
+
 </body>
+
 </html>
