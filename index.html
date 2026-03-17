@@ -11,9 +11,12 @@
 
 <body>
     <header id="main_header">
-        <div id="header_menubar">
-            <i class="fa-solid fa-bars"></i>
+        <!-- ✅ Menu icon (navbar controls) -->
+        <div id="menu_container">
+            <i id="header_menu" class="fa-solid fa-bars"></i>
         </div>
+
+        <!-- ✅ Nav -->
         <nav id="main_nav">
             <a href="index.html">Home</a>
             <a href="#card_container">View Assignments</a>
@@ -24,15 +27,21 @@
         <div id="branding">
             <img src="./images/profilepicture.jpg" alt="profilepicture">
         </div>
-
     </header>
+
+    <!-- ...New dropdown navbar... -->
+
+    <nav id="dropdown_nav">
+        <a href="index.html">Home</a>
+        <a href="#card_container">View Assignments</a>
+        <a href="#Feedback">Feedback</a>
+        <a href="#Contact">Contact Me</a>
+    </nav>
 
     <main>
         <!-- ...Hero Section... -->
         <div id="hero">
-            <div id="hero_profile">
-                <img src="./images/profilepicture.jpg" alt="banner">
-            </div>
+            <img src="./images/profilepicture.jpg" alt="banner">
             <div id="hero_text">
                 <h1>Welcome to My Frontend Journey</h1>
                 <h3>Hi, I'm Ayotomide Adeyanju</h3>
@@ -82,7 +91,7 @@
             <div class="card_item">
                 <img src="./images/Arraysc.png" alt="Arraymethod_img_preview">
                 <div id="card_inneritem">
-                    <h2>JavaScript Array Methods</h2>
+                    <h2>Array Methods</h2>
                     <p>Demonstrating JavaScript array methods and logic.</p>
                 </div>
                 <button id="btn_cta" onclick="location.href=`array.html`">View Assignment <i
@@ -92,7 +101,7 @@
             <div class="card_item">
                 <img src="./images/Apisc.png" alt="API_img_preview">
                 <div id="card_inneritem">
-                    <h2>API Assignment</h2>
+                    <h2>API</h2>
                     <p>Demonstrating how to fetch and display data from an external API using JavaScript</p>
                 </div>
                 <button id="btn_cta" onclick="location.href=`api.html`">View Assignment <i
@@ -110,57 +119,63 @@
             </div>
         </section>
 
-       
+
 
         <!-- ...Feedback Section...  -->
-         <section id="Feedback">
+        <section id="Feedback">
             <h2>Assignment Feedback</h2>
             <div id="Feedback_form">
                 <label for="Name">Name:</label>
-                <input type="text" placeholder="Enter your name" required> 
+                <input type="text" placeholder="Enter your name" required>
                 <label for="Email">Email:</label>
-                <input type="email" placeholder="Enter your email" required> 
-                <label for="Reviewing">Which assignment are reviewing?</label> 
-                <input type="text" placeholder="Enter your answer" required> 
-                <label for="Rating">Rating:</label> 
+                <input type="email" placeholder="Enter your email" required>
+                <label for="Reviewing">Which assignment are reviewing?</label>
+                <input type="text" placeholder="Enter your answer" required>
+                <label for="Rating">Rating:</label>
                 <input type="checkbox">
-                <label for="Excellent">Excellent</label> 
+                <label for="Excellent">Excellent</label>
                 <input type="checkbox">
-                <label for="Good">Good</label> 
+                <label for="Good">Good</label>
                 <input type="checkbox">
-                <label for="Average">Average</label> 
+                <label for="Average">Average</label>
                 <input type="checkbox">
-                <label for="Poor">Poor</label> 
-                <textarea name="Feedback" id="Feedback_box" placeholder="Enter Your Feedback" rows="5" cols="60"></textarea> <br> <br>
+                <label for="Poor">Poor</label>
+                <textarea name="Feedback" id="Feedback_box" placeholder="Enter Your Feedback" rows="5"
+                    cols="60"></textarea> <br> <br>
             </div>
-                <button id="Feedback_cta" onclick="location.href=`index.html`">Submit</button>
-         </section>
+            <button id="Feedback_cta" onclick="location.href=`index.html`">Submit</button>
+        </section>
 
-         <!-- ...Contact Section... -->
-         <section id="Contact">
+        <!-- ...Contact Section... -->
+        <section id="Contact">
             <div id="Contact_title">
                 <h2>Contact Me</h2>
                 <p>Feel free to get in touch with me through the form below</p>
             </div>
 
             <div id="Contact_form">
-            <div id="Contact_links">
-                <p> <i class="fa-regular fa-envelope"></i> ayotomideadeyanju@gmail.com</p>
-                <a href="https://ng.linkedin.com/in/adeyanju-ayotomide-59004b129" target="_blank"><i class="fa-brands fa-square-linkedin"></i> https://ng.linkedin.com/in/adeyanju-ayotomide-59004b129</a>
-                <a href="https://github.com/teecodes-dev" target="_blank"><i class="fa-brands fa-square-github"></i> https://github.com/teecodes-dev</a>
-                <a href="https://x.com/Haryor449022" target="_blank"><i class="fa-brands fa-x-twitter"></i> https://x.com/Haryor449022</a>
-                <p><i class="fa-brands fa-whatsapp"></i> +2348061520324</p>
-            </div>
+                <div id="Contact_links">
+                    <p> <i class="fa-regular fa-envelope"></i> ayotomideadeyanju@gmail.com</p>
+                    <a href="https://ng.linkedin.com/in/adeyanju-ayotomide-59004b129" target="_blank"><i
+                            class="fa-brands fa-square-linkedin"></i>
+                        https://ng.linkedin.com/in/adeyanju-ayotomide-59004b129</a>
+                    <a href="https://github.com/teecodes-dev" target="_blank"><i class="fa-brands fa-square-github"></i>
+                        https://github.com/teecodes-dev</a>
+                    <a href="https://x.com/Haryor449022" target="_blank"><i class="fa-brands fa-x-twitter"></i>
+                        https://x.com/Haryor449022</a>
+                    <p><i class="fa-brands fa-whatsapp"></i> +2348061520324</p>
+                </div>
 
-            <div id="Contact_text">
-                <input type="text" placeholder="Your Name" required> 
-                <input type="email" placeholder="Your Email" required> 
-                <textarea name="Message" id="Contact_messagebox" placeholder="Your Message" rows="5" cols="60" required></textarea>
-                <button id="Contact_btn" onclick="location.href=`index.html`">Send Message</button>
-            </div>
+                <div id="Contact_text">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea name="Message" id="Contact_messagebox" placeholder="Your Message" rows="5" cols="60"
+                        required></textarea>
+                    <button id="Contact_btn" onclick="location.href=`index.html`">Send Message</button>
+                </div>
             </div>
             <p id="copyright"><i class="fa-regular fa-copyright"></i> 2026 Ayotomide Adeyanju. All rights reserved. </p>
-         </section>
+        </section>
 
     </main>
 

@@ -12,3 +12,10 @@
 //         });
 //     });
 // });
+
+const menuButton = document.querySelector("#header_menu");
+const dropdownNav = document.querySelector("#dropdown_nav");
+
+menuButton.addEventListener("click", () => {
+    dropdownNav.classList.toggle("show");
+})
