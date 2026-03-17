@@ -123,6 +123,14 @@ html {
   line-height: 1.5;
 }
 
+#hero_text h1 {
+  font-size: 44px;
+}
+
+#hero_text h3 {
+  font-size: 26px;
+}
+
 /* ....Assignment Cards.... */
 #card_container {
   display: grid;
@@ -338,6 +346,14 @@ i {
     text-align: center;
   }
 
+  #hero_text h1 {
+    font-size: 36px;
+  }
+
+  #hero_text h3 {
+    font-size: 22px;
+  }
+
   #Feedback {
     width: 90%;
     max-width: 500px;
@@ -384,6 +400,9 @@ i {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+  }
+
+  body {
     overflow-x: hidden;
   }
 
@@ -426,15 +445,27 @@ i {
   #hero {
     grid-template-columns: 1fr;
     width: 100%;
-    gap: 15%;
+    height: auto;
+    padding: 40px 20px;
+    gap: 20px;
     place-items: center;
-    height: 80vh;
-    padding: 10%;
+  }
+
+  #hero img {
+    max-width: 200px;
   }
 
   #hero_text {
-    margin-top: 20px;
+    margin-top: 10px;
     text-align: center;
+  }
+
+  #hero_text h1 {
+    font-size: 28px;
+  }
+
+  #hero_text h3 {
+    font-size: 18px;
   }
 
   #card_container {
